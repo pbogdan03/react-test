@@ -5,9 +5,10 @@ import data from './data';
 
 console.log(data);
 
-import App from './App';
+import apps from './App';
+const TimerApp = apps.TimerApp
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+  <TimerApp />,
+  document.getElementById('rt-timer')
 );

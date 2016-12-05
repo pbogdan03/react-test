@@ -12,7 +12,7 @@ const Timer = ({currentValue, resetTimerHandler}) => {
   );
 }
 
-class App extends Component {
+class TimerApp extends Component {
   constructor(props) {
     super(props);
 
@@ -54,4 +54,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default {TimerApp};
