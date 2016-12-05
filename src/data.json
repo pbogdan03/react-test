@@ -1,0 +1,69 @@
+{
+    "data": {
+        "titles": {
+            "1": {
+                "catch_phrase": "Cross-platform 24 hour archive",
+                "color": "#9ce1e6"
+            },
+            "2": {
+                "catch_phrase": "Reactive mobile firmware",
+                "color": "#6403cf"
+            },
+            "3": {
+                "catch_phrase": "Polarised homogeneous protocol",
+                "color": "#266b96"
+            },
+            "4": {
+                "catch_phrase": "Public-key hybrid task-force",
+                "color": "#f09436"
+            },
+            "5": {
+                "catch_phrase": "Optimized value-added contingency",
+                "color": "#45d515"
+            },
+            "6": {
+                "catch_phrase": "Distributed full-range neural-net",
+                "color": "#9d3381"
+            },
+            "7": {
+                "catch_phrase": "Profit-focused clear-thinking help-desk",
+                "color": "#df2e62"
+            },
+            "8": {
+                "catch_phrase": "Cross-platform encompassing concept",
+                "color": "#67aa6d"
+            },
+            "9": {
+                "catch_phrase": "Cross-platform national solution",
+                "color": "#9ba9c3"
+            },
+            "10": {
+                "catch_phrase": "Pre-emptive homogeneous database",
+                "color": "#0f340a"
+            }
+        },
+      "business": [
+        {
+          "id" : "7e86748d-495c-4a9b-9740-e7b943a484f4",
+          "business_name" : "Jast-Auer",
+          "phrase_id" : 2
+        }, {
+          "id" : "a47df02a-2bf2-4a6d-8aaf-95db35f1720d",
+          "business_name" : "Turner, Tromp and Bradtke",
+          "phrase_id" : 5
+        }, {
+          "id" : "f8829ae8-c3cf-4ae5-a525-6b5d26f6f9ed",
+          "business_name" : "Fadel-Dickinson",
+          "phrase_id" : 3
+        }, {
+          "id" : "e935de75-48e8-40f4-ad78-ed7c693600b9",
+          "business_name" : "Murphy-Carroll",
+          "phrase_id" : 5
+        }, {
+          "id" : "3cd21d45-4103-45f7-8be6-cab59b7e7335",
+          "business_name" : "Nader-O'Conner",
+          "phrase_id" : 9
+        }
+      ]
+    }
+}
