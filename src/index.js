@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import data from './data';
+// because of 'data' in the .json
+import {data}  from './data';
 
-console.log(data);
-
-import apps from './App';
-const TimerApp = apps.TimerApp
+import Timer from './components/Timer';
+import BusinessList from './components/BusinessList';
 
 ReactDOM.render(
-  <TimerApp />,
+  <Timer />,
   document.getElementById('rt-timer')
+);
+
+ReactDOM.render(
+  <BusinessList businesses={data.business} />,
+  document.getElementById('rt-catch-phrases')
 );

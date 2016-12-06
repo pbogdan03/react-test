@@ -46,22 +46,27 @@
         {
           "id" : "7e86748d-495c-4a9b-9740-e7b943a484f4",
           "business_name" : "Jast-Auer",
+          "turnover": 956000,
           "phrase_id" : 2
         }, {
           "id" : "a47df02a-2bf2-4a6d-8aaf-95db35f1720d",
           "business_name" : "Turner, Tromp and Bradtke",
+          "turnover": 1555000,
           "phrase_id" : 5
         }, {
           "id" : "f8829ae8-c3cf-4ae5-a525-6b5d26f6f9ed",
           "business_name" : "Fadel-Dickinson",
+          "turnover": 12000000,
           "phrase_id" : 3
         }, {
           "id" : "e935de75-48e8-40f4-ad78-ed7c693600b9",
           "business_name" : "Murphy-Carroll",
+          "turnover": 2100000,
           "phrase_id" : 5
         }, {
           "id" : "3cd21d45-4103-45f7-8be6-cab59b7e7335",
           "business_name" : "Nader-O'Conner",
+          "turnover": 531000,
           "phrase_id" : 9
         }
       ]
