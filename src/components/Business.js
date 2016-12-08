@@ -1,11 +1,15 @@
 import React from 'react';
+import Title from './Title';
 
-const Business = ({business, handleDelete}) => {
+const Business = ({business, title, handleDelete}) => {
   const handleClick = () => {
     handleDelete(business.id)
   }
 
   const formatTurnover = val => {
+    if(!val) {
+      return '';
+    }
     let count = 0;
     let formattedVal = val.toString().split('').reduceRight((a, b) => {
       if(count !== 0 && count % 3 === 0) a.push('.');
@@ -21,6 +25,7 @@ const Business = ({business, handleDelete}) => {
       <div className="business-item--name">
         {business.business_name}
       </div>
+      <Title {...title}/>
       <div className="business-item--turnover">
         {formatTurnover(business.turnover)}
       </div>

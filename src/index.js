@@ -13,6 +13,6 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-  <BusinessList businesses={data.business} />,
+  <BusinessList businesses={data.business} titles={data.titles}/>,
   document.getElementById('rt-catch-phrases')
 );

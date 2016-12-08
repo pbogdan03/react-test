@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Business from './Business';
+import Form from './Form';
 
 class BusinessList extends Component {
   constructor(props) {
@@ -19,16 +20,28 @@ class BusinessList extends Component {
     this.setState({ businesses });
   };
 
+  addBusiness = (business_name, turnover) => {
+    this.setState({
+      businesses: this.state.businesses.concat({
+        id: Date.now(),
+        business_name,
+        turnover
+      })
+    })
+  };
+
   render() {
     return (
       <div className="BusinessList">
         <h2>Business catchphrases</h2>
+        <Form handleAdd={this.addBusiness}/>
         <ul className="business-list">
           {this.state.businesses.map(business => {
             return (
             <Business
               key={business.id}
               business={business}
+              title={this.props.titles[business.phrase_id]}
               handleDelete={this.deleteBusiness} />
             )
           })}
