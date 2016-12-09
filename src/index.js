@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// because of 'data' in the .json
-import {data}  from './data';
-
 import Timer from './components/Timer';
 import BusinessList from './components/BusinessList';
 
@@ -13,6 +10,6 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-  <BusinessList businesses={data.business} titles={data.titles}/>,
+  <BusinessList />,
   document.getElementById('rt-catch-phrases')
 );

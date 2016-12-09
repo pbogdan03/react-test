@@ -5,11 +5,19 @@ import Form from './Form';
 class BusinessList extends Component {
   constructor(props) {
     super(props);
-    this.state = { businesses: this.props.businesses };
+    this.state = { businesses: [] };
 
     // use this to bind 'this' to class instance if not using the function as a
     // property of the class(see below)
     //this.deleteBusiness = this.deleteBusiness.bind(this);
+  }
+
+  componentDidMount() {
+    fetch('http://localhost:8000/api/businesses')
+      .then(response => response.json())
+      .then(businesses => {
+        this.setState({ businesses });
+      });
   }
 
   // this is not in JS yet, React compiles it
@@ -41,7 +49,7 @@ class BusinessList extends Component {
             <Business
               key={business.id}
               business={business}
-              title={this.props.titles[business.phrase_id]}
+              titles={business.titles}
               handleDelete={this.deleteBusiness} />
             )
           })}

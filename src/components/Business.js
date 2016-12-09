@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from './Title';
 
-const Business = ({business, title, handleDelete}) => {
+const Business = ({business, titles, handleDelete}) => {
   const handleClick = () => {
     handleDelete(business.id)
   }
@@ -25,7 +25,7 @@ const Business = ({business, title, handleDelete}) => {
       <div className="business-item--name">
         {business.business_name}
       </div>
-      <Title {...title}/>
+      {titles.map(title => <Title key={title.color} {...title} />)}
       <div className="business-item--turnover">
         {formatTurnover(business.turnover)}
       </div>

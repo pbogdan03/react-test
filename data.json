@@ -15,7 +15,7 @@
             },
             "4": {
                 "catch_phrase": "Public-key hybrid task-force",
-                "color": "#45d515"
+                "color": "#0f340a"
             },
             "5": {
                 "catch_phrase": "Optimized value-added contingency",
@@ -39,7 +39,7 @@
             },
             "10": {
                 "catch_phrase": "Pre-emptive homogeneous database",
-                "color": "#0f340a"
+                "color": "#45d515"
             }
         },
       "business": [
@@ -57,7 +57,7 @@
           "id" : "f8829ae8-c3cf-4ae5-a525-6b5d26f6f9ed",
           "business_name" : "Fadel-Dickinson",
           "turnover": 12000000,
-          "phrase_id" : 3
+          "phrase_ids" : [3, 10]
         }, {
           "id" : "e935de75-48e8-40f4-ad78-ed7c693600b9",
           "business_name" : "Murphy-Carroll",
