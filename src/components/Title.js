@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 const Title = ({ catch_phrase, color }) => (
   <div className="Title" style={{backgroundColor: color}}>
