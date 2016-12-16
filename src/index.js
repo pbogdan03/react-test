@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route, browserHistory } from 'react-router';
 
-import Timer from './components/Timer';
-import BusinessList from './components/BusinessList';
+import App from './app';
+import Register from './components/Register';
+import Home from './components/Home';
 
-ReactDOM.render(
-  <Timer />,
-  document.getElementById('rt-timer')
-);
-
-ReactDOM.render(
-  <BusinessList />,
-  document.getElementById('rt-catch-phrases')
-);
+ReactDOM.render((
+  <Router history={browserHistory}>
+    <Route component={App}>
+      <Route path="/" components={{main: Home}} />
+      <Route path="register" components={{main: Register}} />
+    </Route>
+  </Router>
+), document.getElementById('root'));
